@@ -9,7 +9,7 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint *snail = list;
+	listint_t *snail = list;
 	listint_t *rabbit = list;
 
 	while (rabbit && rabbit->next)
