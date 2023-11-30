@@ -1,4 +1,6 @@
 #include "lists.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 /**
  * insert_node - inserts a new node at a given position in a sorted list.
@@ -31,6 +33,7 @@ listint_t *insert_node(listint_t **head, int number)
 		prev = current;
 		current = current->next;
 	}
+
 	new->next = current;
 	prev->next = new;
 
