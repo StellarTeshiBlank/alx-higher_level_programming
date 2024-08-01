@@ -22,15 +22,8 @@ async function main() {
     const resp = JSON.parse(body);
     const characters = resp.characters;
 
-    for (const characterUrl of characters) {
-      try {
-        const characterBody = await fetchUrl(characterUrl);
-        const character = JSON.parse(characterBody);
-        console.log(character.name);
-      } catch (characterErr) {
-        console.error('Error fetching character:', characterErr);
-      }
-    }
+    // Output the number of characters
+    console.log(`Number of characters: ${characters.length}`);
   } catch (err) {
     console.error('Error fetching film:', err);
   }
