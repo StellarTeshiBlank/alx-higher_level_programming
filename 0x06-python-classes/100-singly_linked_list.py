@@ -34,6 +34,9 @@ class Node:
 
 
 class SinglyLinkedList:
+    """
+    This is a singly linked list class
+    """
     def __str__(self):
         rtn = ""
         ptr = self.__head
