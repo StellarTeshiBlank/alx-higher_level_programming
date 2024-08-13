@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """
-This module defines a class Nide that defines a node of a singly linked list
+This module defines a class Node that defines a node of a singly linked list
 """
 
 
 class Node:
+    """
+    This class defines a node of a singly linked list
+    """
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
