@@ -23,6 +23,7 @@ def is_safe(m_queen, nqueen):
             return False
     return True
 
+
 def print_result(m_queen, nqueen):
     """
     Print the list with the queens' positions.
@@ -33,6 +34,7 @@ def print_result(m_queen, nqueen):
     """
     result = [[i, m_queen[i]] for i in range(nqueen)]
     print(result)
+
 
 def queen(m_queen, nqueen):
     """
@@ -55,6 +57,7 @@ def queen(m_queen, nqueen):
             if nqueen + 1 < len(m_queen):
                 queen(m_queen, nqueen + 1)
 
+
 def solve_n_queen(size):
     """
     Invoke the backtracking algorithm to solve the N-Queen problem.
@@ -62,8 +65,10 @@ def solve_n_queen(size):
     Args:
         size: Size of the chessboard.
     """
+
     m_queen = [-1] * size
     queen(m_queen, 0)
+
 
 if __name__ == '__main__':
     import sys
