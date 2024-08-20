@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+This Module has a Class BaseGeometry
+"""
+
+
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
